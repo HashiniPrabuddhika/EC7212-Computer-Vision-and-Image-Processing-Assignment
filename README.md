@@ -37,10 +37,13 @@ ImageProcessingProject/
 
 ## Getting Started
 ✅ 1. Prerequisites
-Python 3.7+
-Git
+
+   - Python 3.7+
+   - Git
+     
 ✅ 2. Setup Instructions
-Clone the repository:
+
+   - Clone the repository:
 ```xml 
 
 git clone https://github.com/HashiniPrabuddhika/EC7212-Computer-Vision-and-Image-Processing-Assignment.git

@@ -69,7 +69,7 @@ python main.py
 Process the input_image.png and save all visual results in the results_opencv/ folder.
 
 ## Results and Explanations
-Task 1: Intensity Level Reduction
+### Task 1: Intensity Level Reduction
 Concept: This operation reduces the number of gray levels in an image, known as intensity quantization. Instead of 256 levels (8-bit), the image is mapped to smaller intensity levels (e.g., 16, 4, 2). This technique is commonly used in compression and simplification tasks.
 
 Implementation: Using NumPy, the image pixel values are divided into equal intervals and mapped to representative intensity values.
@@ -79,7 +79,7 @@ Result:
 
 Intensity Level Reduction As the number of levels decreases, smooth gradients in the image are replaced by abrupt transitions. This introduces visual artifacts such as false contouring or posterization, especially at lower levels.
 
-Task 2: Spatial Averaging
+### Task 2: Spatial Averaging
 Concept: Spatial averaging is a low-pass filtering method used to reduce noise and smooth images. It replaces each pixel with the average value of its surrounding neighborhood.
 
 Implementation: Using OpenCV's cv2.blur() function, the image is filtered with kernels of size 3×3, 10×10, and 20×20.
@@ -90,7 +90,7 @@ With a 3×3 kernel, slight blurring is observed, preserving most image details.
 
 The 10×10 and 20×20 kernels produce progressively smoother images, effectively suppressing high-frequency content (edges and textures) but also reducing detail clarity.
 
-Image Rotation
+### Task 3: Image Rotation
 Concept: Image rotation is a geometric transformation used for alignment, augmentation, and visualization. A key challenge is avoiding clipping when rotating by non-right angles.
 
 Implementation:
@@ -105,7 +105,7 @@ Result:
 
 - The 45° rotation is placed in an expanded canvas, avoiding corner clipping and preserving the entire visual content.
 
-Task 4: Spatial Resolution Reduction
+### Task 4: Spatial Resolution Reduction
 Concept: This technique simulates the effect of reducing an image’s resolution by grouping pixels into blocks and replacing each block with its average value, a process often referred to as pixelation.
 
 Implementation: For block sizes 3×3, 5×5, and 7×7, the image is traversed in non-overlapping chunks. The mean color is calculated for each block and applied uniformly.
@@ -116,7 +116,7 @@ Result:
 
 - Larger blocks (7×7) produce a noticeable mosaic-style degradation of spatial detail, which effectively demonstrates downsampling principles.
 
-Output folder
+## Output folder
 Saved in results_opencv/ automatically after the code runs
 ```xml
   Operation          | Output Example      

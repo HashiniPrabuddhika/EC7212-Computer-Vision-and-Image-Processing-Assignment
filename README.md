@@ -122,8 +122,7 @@ Result:
 ## Output folder
 Saved in results_opencv/ automatically after the code runs
 ```xml
-  Operation          | Output Example      
--------------------- | ---------------------- 
+ 
 Intensity Reduction  - task1_intensity.png  
 Spatial Averaging    - task2_averaging.png  
 Image Rotation       - task3_rotation.png  

@@ -1,5 +1,5 @@
-#EC7212 - Computer Vision and Image Processing Assignment
-##Image Processing Operations
+# EC7212 - Computer Vision and Image Processing Assignment
+## Image Processing Operations
 
 This project is developed as part of the EC7212 - Computer Vision and Image Processing course. It showcases the implementation of four fundamental image processing operations using Python, leveraging the efficiency of OpenCV and NumPy for computation and visualization.
 
